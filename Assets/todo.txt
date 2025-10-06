@@ -1,0 +1,7 @@
+* create basic shader/effect with noise texture
+* add convenience features
+    - auto-detect necessary radius and speed based on static "dissolve time" variable
+* make variants
+    - with/without noise texture
+    - smoke VFX around dissolving parts
+    - dripping liquid with decals from dissolving parts
