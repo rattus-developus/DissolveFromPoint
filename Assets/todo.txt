@@ -1,10 +1,15 @@
-* create basic shader/effect with noise texture
-* add convenience features
-    - auto-detect necessary radius and speed based on static "dissolve time" variable
-    - use 3D noise to make seamless noise when dissolving?
-* make variants
-    - with/without noise texture
-    - smoke VFX around dissolving parts
-    - dripping liquid with decals from dissolving parts
-	- version of material with constant radius and source point that updates position over time
-    - convert shader to a visual effect for ease of use?
+X create basic shader/effect with noise texture
+* finish textured version
+	X make variable object space
+	X make dissolve begin/end within 0.05f of each end of the slider (not fully necessary)
+	X add edge glow
+	- clean up settings/variables
+	- add comments/stickys
+	- PERFORMANCE TESTING AND OPTIMIZATION (simplify math? 2 lerps feels weird)
+	- create script w/ control modes (also maybe variable descriptions?)
+		-- point mode that uses a transform, and radius var. convert world space to object space?
+		-- "default" mode expanding from a point on the object using dissolve time float and auto detection
+* finish flat version
+	- give it all the same features of the textured version
+* make visual effect with smoke/dissolve drops and decals
+	- multiple dissolve points?
