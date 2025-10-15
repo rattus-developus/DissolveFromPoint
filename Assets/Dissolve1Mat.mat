@@ -21,7 +21,7 @@ Material:
   stringTagMap: {}
   disabledShaderPasses:
   - MOTIONVECTORS
-  m_LockedProperties: 
+  m_LockedProperties: _dissRadius
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
@@ -41,12 +41,17 @@ Material:
     m_Floats:
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _dissolvePROG: 0.638
+    - _dissProgress: 0
+    - _dissRadius: 1
+    - _dissolvePROG: 0
     - _dissolveRadius: 1
     - _dissolveSpeed: 2
+    - _glowArea: 0.1
     - _radius: 0
     m_Colors:
+    - _dissPoint: {r: 0.35, g: 0, b: 0.35, a: 0}
     - _dissolvePoint: {r: 0, g: 0, b: -0.5, a: 0}
+    - _glowColor: {r: 3.9999995, g: 0.61720026, b: 0, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
 --- !u!114 &3247945536849125743
