@@ -11,6 +11,6 @@ X create basic shader/effect with noise texture
 		X JUST USE 2 scripts. "Dissolve" and "Hot Ball"
 		X point mode that uses a transform, and radius var. convert world space to object space?
 		X "default" mode expanding from a point on the object using dissolve time float and auto detection
-* finish flat version
-	- give it all the same features of the textured version
+X finish flat version
+	X give it all the same features of the textured version
 * demo stuff
