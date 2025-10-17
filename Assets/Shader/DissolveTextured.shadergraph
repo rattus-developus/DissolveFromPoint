@@ -2107,7 +2107,7 @@
     "overrideHLSLDeclaration": false,
     "hlslDeclarationOverride": 0,
     "m_Hidden": false,
-    "m_Value": 0.5,
+    "m_Value": 0.0,
     "m_FloatType": 1,
     "m_RangeValues": {
         "x": 0.0,
@@ -2193,7 +2193,7 @@
     "m_Value": {
         "x": 0.0,
         "y": 0.0,
-        "z": -0.5,
+        "z": 0.0,
         "w": 0.0
     }
 }
@@ -4373,8 +4373,8 @@
     "hlslDeclarationOverride": 0,
     "m_Hidden": false,
     "m_Value": {
-        "r": 4.0,
-        "g": 0.0,
+        "r": 3.999999523162842,
+        "g": 0.6172002553939819,
         "b": 0.0,
         "a": 1.0
     },
