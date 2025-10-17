@@ -8,14 +8,14 @@ public class DissolveHelper : MonoBehaviour
 {
     [Tooltip("This string holds the player's name.")]
     [SerializeField] float dissolveTime;
-    Vector3 localDissPoint;
+    [ColorUsage(true, true)] public Color hdrColor;
     bool dissolving;
     float timer;
 
     public void StartDissolve(Vector3 dissolvePointWorld, float duration = -1f)
     {
         if (duration != -1f) dissolveTime = duration;
-        SetShaderProperties(transform.worldToLocalMatrix * dissolvePointWorld, duration);
+        SetShaderProperties(transform.InverseTransformPoint(dissolvePointWorld), duration);
         dissolving = true;
     }
 
@@ -35,10 +35,11 @@ public class DissolveHelper : MonoBehaviour
         if (!GetComponent<MeshFilter>() || !GetComponent<Renderer>()) return;
 
         //Use mesh bounds to approximate a bounding sphere, used as the radius
-        float radius = GetComponent<MeshFilter>().mesh.bounds.extents.magnitude + localDissPoint.magnitude;
+        float radius = GetComponent<MeshFilter>().mesh.bounds.extents.magnitude + dissolvePointLocal.magnitude;
 
         GetComponent<Renderer>().material.SetFloat("_dissRadius", radius);
-        GetComponent<Renderer>().material.SetVector("_dissPoint", localDissPoint);
+        GetComponent<Renderer>().material.SetVector("_dissPoint", dissolvePointLocal);
+        GetComponent<Renderer>().material.SetColor("_glowColor", hdrColor);
     }
 
     void Update()

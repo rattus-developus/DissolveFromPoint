@@ -12,7 +12,7 @@ public class DissolveManual : MonoBehaviour
     void Update()
     {
         if (dissolveTran == null || dissolveObj == null) return;
-        Vector3 localPos = dissolveObj.transform.worldToLocalMatrix * dissolveTran.position;
+        Vector3 localPos = dissolveObj.transform.InverseTransformPoint(dissolveTran.position);
         dissolveObj.GetComponent<Renderer>().material.SetVector("_dissPoint", localPos);
     }
 }
