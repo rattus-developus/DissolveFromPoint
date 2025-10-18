@@ -19,4 +19,9 @@ public class DummyDemo : MonoBehaviour
             line.SetActive(false);
         }
     }
+
+    void OnDestroy()
+    {
+        helper.Reset();
+    }
 }
