@@ -25,13 +25,14 @@ Material:
     m_TexEnvs: []
     m_Ints: []
     m_Floats:
-    - _DissolveProgress: 0.6
+    - _DissolveProgress: 0
     - _DissolveRadiusOS: 1
     - _GlowArea: 0.1
-    - _NoiseScale: 686.4
+    - _GlowStrength: 5
+    - _NoiseScale: 70.35
     m_Colors:
     - _DissolvePointOS: {r: 0.35, g: 0, b: 0.35, a: 1}
-    - _GlowColor: {r: 1, g: 1, b: 1, a: 1}
+    - _GlowColor: {r: 1, g: 0, b: 0, a: 1}
     - _ObjectColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
