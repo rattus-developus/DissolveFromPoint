@@ -1218,17 +1218,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 73ffbc06802a247cfb1b26f4ee67eba8,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 73ffbc06802a247cfb1b26f4ee67eba8,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 73ffbc06802a247cfb1b26f4ee67eba8,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 73ffbc06802a247cfb1b26f4ee67eba8,
         type: 3}
@@ -1304,7 +1304,7 @@ PrefabInstance:
         type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 4ed7965aa1e6ac243a7a414a2858ea39, type: 2}
+      objectReference: {fileID: 2100000, guid: 059205e43b185e04eb999685f19ed571, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -1469,7 +1469,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8974e89ef3a58a468f6e4e6579619d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dissolveTime: 1
+  dissolveTime: 0.85
   hdrColor: {r: 6.6415095, g: 3.1738145, b: 1.2844428, a: 1}
 --- !u!1 &2109670089
 GameObject:

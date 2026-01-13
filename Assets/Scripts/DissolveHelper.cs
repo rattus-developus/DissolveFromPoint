@@ -35,11 +35,11 @@ public class DissolveHelper : MonoBehaviour
         if (!GetComponent<MeshFilter>() || !GetComponent<Renderer>()) return;
 
         //Use mesh bounds to approximate a bounding sphere, used as the radius
-        float radius = GetComponent<MeshFilter>().mesh.bounds.extents.magnitude + dissolvePointLocal.magnitude;
+        float radius = GetComponent<MeshFilter>().mesh.bounds.extents.magnitude + dissolvePointLocal.magnitude + 0.1f;
 
-        GetComponent<Renderer>().sharedMaterial.SetFloat("_dissRadius", radius);
-        GetComponent<Renderer>().sharedMaterial.SetVector("_dissPoint", dissolvePointLocal);
-        GetComponent<Renderer>().sharedMaterial.SetColor("_glowColor", hdrColor);
+        GetComponent<Renderer>().sharedMaterial.SetFloat("_DissolveRadiusOS", radius);
+        GetComponent<Renderer>().sharedMaterial.SetVector("_DissolvePointOS", dissolvePointLocal);
+        GetComponent<Renderer>().sharedMaterial.SetColor("_GlowColor", hdrColor);
     }
 
     void Update()
@@ -54,6 +54,6 @@ public class DissolveHelper : MonoBehaviour
     void SetShaderProgress()
     {
         if (!GetComponent<Renderer>()) return;
-        GetComponent<Renderer>().sharedMaterial.SetFloat("_dissProgress", timer / dissolveTime);
+        GetComponent<Renderer>().sharedMaterial.SetFloat("_DissolveProgress", timer / dissolveTime);
     }
 }

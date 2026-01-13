@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: HLSLmat
-  m_Shader: {fileID: 4800000, guid: c8fc8e50a9f751746a676bdcc2cd2da6, type: 3}
+  m_Name: dissolveMat
+  m_Shader: {fileID: 4800000, guid: f083aaf72dbd4344dac9dd2ae0595626, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -22,17 +22,26 @@ Material:
   m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
-    m_TexEnvs: []
+    m_TexEnvs:
+    - _BaseMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
     - _DissolveProgress: 0
     - _DissolveRadiusOS: 1
-    - _GlowArea: 0.1
-    - _GlowStrength: 5
-    - _NoiseScale: 70.35
+    - _DistanceWeight: 0.5
+    - _GlowArea: 0.075
+    - _GlowStrength: 8
+    - _Metallic: 0
+    - _NoiseScale: 20
+    - _Occlusion: 0.05
+    - _Smoothness: 0.5
     m_Colors:
+    - _BaseColor: {r: 1, g: 1, b: 1, a: 0.2901961}
     - _DissolvePointOS: {r: 0.35, g: 0, b: 0.35, a: 1}
-    - _GlowColor: {r: 1, g: 0, b: 0, a: 1}
-    - _ObjectColor: {r: 1, g: 1, b: 1, a: 1}
+    - _Emission: {r: 0, g: 0, b: 0, a: 0}
+    - _GlowColor: {r: 1, g: 0.598363, b: 0, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
