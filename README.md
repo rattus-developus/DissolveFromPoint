@@ -1,7 +1,7 @@
 # DissolveFromPoint - Unity URP Lit Shader Effect
 
 ## Description
-This shader dissolves an object outward from a given point without using 3D noise.
+This shader dissolves an object outward from a given point using 3D noise.
 
 Most examples I found of shader effects that dissolve a rendered object do so by mapping stepped/clipped noise onto an object's UV. This works fine in some cases, but the object appears to dissolve from all sides at once and the UV borders will cause strange artifacts.
 
