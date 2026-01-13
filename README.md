@@ -9,18 +9,18 @@ The goal of this shader is to remedy these issues, granting a more visually appe
 
 ### "Typical" Dissolve
 <p align="center">
-  <img src="examples/typicalDissolve.gif" alt="Typical Dissolve" width="400">
+  <img src="examples/typicalDissolve.gif" alt="Typical Dissolve" width="800">
 </p>
 (Rigor Mortis Tortoise - https://www.youtube.com/watch?v=U60U9KC7jxk)
 
 ### DissolveFromPoint
 <p align="center">
-  <img src="examples/dissolveExample.gif" alt="DissolveFromPoint" width="400">
+  <img src="examples/dissolveExample.gif" alt="DissolveFromPoint" width="800">
 </p>
 
 ### DissolveFromPoint (in action!)
 <p align="center">
-  <img src="examples/ripKyle.gif" alt="DissolveFromPoint In Action!" width="400">
+  <img src="examples/ripKyle.gif" alt="DissolveFromPoint In Action!" width="800">
 </p>
 (RIP Robot Kyle - https://assetstore.unity.com/packages/3d/characters/robots/robot-kyle-urp-4696?srsltid=AfmBOoq8FOM60zuXhY91WQhW4E78M5Aol39jgiMvfrmJVSm0HjJS35Vo)
 
@@ -35,18 +35,18 @@ This repository contains both a HLSL (preferred) and shader graph version of the
 
 ### Shader Graph Shadow Artifacts
 <p align="center">
-  <img src="examples/graphArtifacts.PNG" alt="Shader Graph Shadow Artifacts" width="400">
+  <img src="examples/graphArtifacts.PNG" alt="Shader Graph Shadow Artifacts" width="1000">
 </p>
 
 ### Shader Graph Performance
 Note that the shader graph version seems to have a slight edge in performance. This could be due to any number of reasons including noise calculations, shadow calculations, and Unity's built-in optimizations. The HLSL version is still preferred for reasons listed above.
 <p align="center">
-  <img src="examples/graphPerformance.PNG" alt="Shader Graph Performance" width="400">
+  <img src="examples/graphPerformance.PNG" alt="Shader Graph Performance" width="1000">
 </p>
 
 ### HLSL Performance
 <p align="center">
-  <img src="examples/hlslPerformance.PNG" alt="HLSL Performance" width="400">
+  <img src="examples/hlslPerformance.PNG" alt="HLSL Performance" width="1000">
 </p>
 
 ## Notes
