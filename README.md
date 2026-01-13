@@ -35,18 +35,18 @@ This repository contains both a HLSL (preferred) and shader graph version of the
 
 ### Shader Graph Shadow Artifacts
 <p align="center">
-  <img src="examples/graphArtifacts.png" alt="Shader Graph Shadow Artifacts" width="400">
+  <img src="examples/graphArtifacts.PNG" alt="Shader Graph Shadow Artifacts" width="400">
 </p>
 
 ### Shader Graph Performance
 Note that the shader graph version seems to have a slight edge in performance. This could be due to any number of reasons including noise calculations, shadow calculations, and Unity's built-in optimizations. The HLSL version is still preferred for reasons listed above.
 <p align="center">
-  <img src="examples/graphPerformance.png" alt="Shader Graph Performance" width="400">
+  <img src="examples/graphPerformance.PNG" alt="Shader Graph Performance" width="400">
 </p>
 
 ### HLSL Performance
 <p align="center">
-  <img src="examples/hlslPerformance.png" alt="HLSL Performance" width="400">
+  <img src="examples/hlslPerformance.PNG" alt="HLSL Performance" width="400">
 </p>
 
 ## Notes
